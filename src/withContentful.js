@@ -65,10 +65,6 @@ export default function withContentful({ accessToken, host, space, environment, 
               console.log(error);
             }
           }
-
-          // getDataFromTree does not call componentWillUnmount
-          // head side effect therefore need to be cleared manually
-          Head.rewind();
         }
 
         // Pass in the Contentful client credentials and initial cache state
